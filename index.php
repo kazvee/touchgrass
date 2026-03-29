@@ -45,11 +45,17 @@ fclose($csvFile);
   </div>
 </nav>
 
+<main class="main-content">
     <div class="cards">
         <?php foreach ($places as $place) {
             include "templates/card.php";
         } ?>
     </div>
+</main>
+
+<footer class="footer">
+    <a href="https://github.com/kazvee/touchgrass/#readme" target="_blank" rel="noopener">GitHub</a>
+</footer>
     
 </body>
 </html>

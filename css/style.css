@@ -3,6 +3,10 @@
     --text-color: #081C15;
     --card-bg: #B7E4C7;
     --card-shadow: rgba(27, 67, 50, 0.5);
+    --link-color: #1B5E20;
+    --btn-bg: #1B5E20;
+    --btn-text: #D8F3DC;
+
 }
 
 [data-theme="dark"] {
@@ -10,6 +14,9 @@
     --text-color: #D8F3DC;
     --card-bg: #1B4332;
     --card-shadow: rgba(216, 243, 220, 0.5);
+    --link-color: #4CAF50;
+    --btn-bg: #4CAF50;
+    --btn-text: #081C15;
 }
 
 * {
@@ -50,6 +57,24 @@ body {
     margin-left: 1rem;
 }
 
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, filter 0.2s;
+}
+
+button:hover {
+    background-color: var(--btn-bg);
+    filter: brightness(1.1);
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -73,6 +98,11 @@ body {
     flex-direction: column;
 }
 
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px var(--card-shadow);
+}
+
 .card h3 {
     margin: 0 0 0.25rem 0;
     font-size: 1.2rem;
@@ -84,6 +114,12 @@ body {
 
 .card a {
     margin-top: 0.5rem;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.card a:hover {
+    text-decoration: underline;
 }
 
 .footer {

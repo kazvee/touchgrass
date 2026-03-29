@@ -54,6 +54,37 @@ body {
     justify-content: space-between;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#search-input {
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: var(--btn-bg);
+}
+
+#search-btn {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+#search-btn:hover {
+    filter: brightness(1.1);
+}
+
 .logo {
     display: flex;
     align-items: flex-end;
@@ -190,5 +221,32 @@ body {
 @media(min-width: 1024px) {
     .cards {
         grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: sticky;
+        margin-bottom: 0.5rem;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav-right {
+        width: 100%;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+
+    #search-input {
+        flex: 1;
+    }
+
+    #theme-toggle {
+        position: absolute;
+        top: 0.5rem;
+        right: 1rem;
+        margin-left: 0;
     }
 }

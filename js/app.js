@@ -1,12 +1,14 @@
 $(document).ready(function () {
     $('#theme-toggle').on('click', function () {
-        const currentTheme = $('body').attr('data-theme');
-        if (currentTheme === 'dark') {
-            $('body').removeAttr('data-theme');
-            $(this).text('🌚 Dark Mode');
+        const body = $('body');
+        const icon = $('#theme-icon');
+
+        if (body.attr('data-theme') === 'dark') {
+            body.removeAttr('data-theme');
+            icon.attr('src', 'assets/img/theme-dark.png');
         } else {
-            $('body').attr('data-theme', 'dark');
-            $(this).text('🌞 Light Mode');
+            body.attr('data-theme', 'dark');
+            icon.attr('src', 'assets/img/theme-light.png');
         }
     });
 });

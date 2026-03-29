@@ -26,6 +26,7 @@ fclose($csvFile);
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Touch Grass</title>
+<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="js/app.js" defer></script>
@@ -34,8 +35,13 @@ fclose($csvFile);
 
 <nav class="navbar">
   <div class="nav-container">
-    <h1 class="logo">🌱 Touch Grass</h1>
-    <button id="theme-toggle">🌚 Dark Mode</button>
+    <h1 class="logo">
+        <img src="assets/img/logo.png" alt="TouchGrass logo" class="logo-img">
+        <span class="logo-text">Touch Grass</span>
+    </h1>
+        <button id="theme-toggle">
+            <img src="assets/img/theme-dark.png" alt="Toggle theme" id="theme-icon" class="theme-icon">
+        </button>
   </div>
 </nav>
 
@@ -45,6 +51,5 @@ fclose($csvFile);
         } ?>
     </div>
     
-</div>
 </body>
 </html>

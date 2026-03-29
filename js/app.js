@@ -27,4 +27,16 @@ $(document).ready(function () {
                 console.error('Failed to copy text: ', err);
             });
     });
+
+    function filterCards() {
+        const query = $('#search-input').val().toLowerCase();
+        $('.card').each(function () {
+            const text = $(this).text().toLowerCase();
+            $(this).toggle(text.includes(query));
+        });
+    }
+    
+    $('#search-input').on('input', filterCards);
+    $('#search-btn').on('click', filterCards);
+
 });

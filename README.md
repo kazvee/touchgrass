@@ -5,6 +5,7 @@ A mobile-first interactive card gallery to document the places we've visited for
 - **Mobile-first responsive cards** using custom CSS grid  
 - **CSV-driven** content for easy updates  
 - **Fully modular layout** with reusable card template
+- **Copy Info button** to quickly copy place details to clipboard
 
 ## Built With 👩‍💻
 - PHP

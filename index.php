@@ -39,9 +39,13 @@ fclose($csvFile);
         <img src="assets/img/logo.png" alt="TouchGrass logo" class="logo-img">
         <span class="logo-text">Touch Grass</span>
     </h1>
+    <div class="nav-right">
+        <input type="text" id="search-input" placeholder="Search places..." aria-label="Search places">
+        <button id="search-btn">Search</button>
         <button id="theme-toggle">
             <img src="assets/img/theme-dark.png" alt="Toggle theme" id="theme-icon" class="theme-icon">
         </button>
+    </div>
   </div>
 </nav>
 

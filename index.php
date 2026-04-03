@@ -36,7 +36,7 @@ fclose($csvFile);
 <nav class="navbar">
   <div class="nav-container">
     <h1 class="logo">
-        <img src="assets/img/logo.png" alt="TouchGrass logo" class="logo-img">
+        <img src="assets/img/logo.png" alt="Touch Grass logo" class="logo-img">
         <span class="logo-text">Touch Grass</span>
     </h1>
     <div class="nav-right">

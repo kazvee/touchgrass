@@ -1,8 +1,7 @@
 # Touch Grass 🌱
-✨ [LIVE DEMO](https://touchgrass.kazvee.com/) ✨
 
 ## Description & Use Case 🤔
-Touch Grass is a mobile-first interactive card gallery to document visited places for easy recommendation to friends and family, built on a shared spreadsheet and exposed as a lightweight static site.
+Touch Grass is a mobile-first interactive card gallery to document visited places for easy recommendation to friends and family, built on a shared spreadsheet and exposed as a lightweight PHP site.
 
 ## Screenshots 🖼️
 
@@ -18,7 +17,7 @@ Touch Grass is a mobile-first interactive card gallery to document visited place
 - **Mobile-first responsive cards** using custom CSS grid
 - **Live search filtering** to quickly find places
 - **Copy Info button** to quickly copy place details to clipboard
-- **Lightweight static site** with no database
+- **Lightweight PHP site** with no database
 - **Theme toggle** with light and dark modes
 
 ## Data Flow 🔁
